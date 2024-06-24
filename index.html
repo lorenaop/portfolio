@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="menu.js" defer></script>
+    <title>Welcome</title>
+  </head>
+  <body>
+    <header>
+      <div class="interface">
+        <div class="logo">
+          <a href="#">
+            <img src="images/logo.png" alt="Logo Welcome" />
+          </a>
+        </div>
+        <!--logo-->
+
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Competências</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Projetos</a></li>
+          </ul>
+        </nav>
+
+        <div class="btn-contato">
+          <a href="#">
+            <button>Contato</button>
+          </a>
+        </div><!--btn-contato-->
+
+        <div class="btn-abrir-menu" id="btn-menu">
+          <i class="bi bi-list"></i>
+        </div><!--btn-abrir-menu-->
+
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x"></i>
+          </div><!--btn-fechar-->
+
+          <nav >
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Competências</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Projetos</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </nav>
+
+        </div><!--menu-mobile-->
+        <div class="overlay-menu" id="overlay-menu"></div>
+      </div><!--interface-->
+    </header>
+
+    <main>
+      <section class="topo-do-site">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>
+                Hi, I'm Lorena, and I Systems Development Analysis student<span
+                  >.</span
+                >
+              </h1>
+              <p>
+                Além de cursar Analise de Desenvolvimento de Sistemas,<br />
+                uso o meu tempo livre para aprofundar cada vez mais na
+                programação, <br />
+                a curiosidade e vontade de aprender são meus combustiveis,
+                <br />
+                então fique a vontade pra me conhecer melhor e <br />conhecer
+                alguns dos meus projetos!
+              </p>
+
+              <div class="btn-contato">
+                <a href="#">
+                  <button>Entre em contato</button>
+                </a>
+              </div>
+              <!--btn-contato-->
+            </div>
+            <!--txt-topo-site-->
+            <div class="img-topo-site">
+              <img src="images/Eu.png" alt="Minha foto" />
+            </div>
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--topo-do-site-->
+      <section class="competencias">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>COMPETÊNCIAS.</span></h2>
+          <div class="flex">
+            <div class="competencias-box">
+              <i class="bi bi-filetype-js"></i>
+              <h3>JavaScript</h3>
+              <p>Juntamente com HTML e CSS <br /> sempre aperfeiçoando meus projetos!</p></div><!--competencias-box-->
+            <div class="competencias-box">
+              <i class="bi bi-git"></i>
+              <h3>Git</h3>
+              <p>Evoluindo sempre nos <br /> versionamentos de códigos!</p></div><!--competencias-box-->
+            <div class="competencias-box">
+              <i class="bi bi-bootstrap"></i></i>
+              <h3>Bootstrap</h3>
+              <p>Um framework para o desenvolvimento <br /> de componentes nas minhas interfaces!</p></div><!--competencias-box-->
+            
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section><!--competências-->
+      <section class="sobre">
+        <div class="interface">
+          <div class="flex">
+            <div class="img-sobre">
+              <img src="images/sobre.png" alt="Sobre">
+            </div><!--img-sobre-->
+            <div class="txt-sobre">
+              <h2>UM POUCO, <span>SOBRE MIM!</span></h2>
+
+              <p>De forma intrínseca sempre fui muito comunicativa, proativa e de fácil adaptação, 
+                tenho motivação em aprender coisas novas e estou em constante atualização no mundo digital.</p>
+
+              <p>Atualmente estou no segundo semestre em Análise e Desenvolvimento de Sistemas,
+                 e tenho a formação do curso completo de Full-Stack pelo grupo Recode. 
+                 Estou em constante aprimoramento das minhas habilidades de Hard-Skills e Soft-skills</p>
+                 <div class="btn-social">
+                  <a href="https://www.instagram.com/oplorena/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                  <a href="https://github.com/lorenaop" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                  <a href="https://www.linkedin.com/in/lorena-oliveira-402ab2182/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                 </div><!--btn-social-->
+            </div><!--txt-sobre-->
+          </div><!--flex-->
+        </div><!--interface-->
+      </section><!--sobre-->
+
+      <section class="portfolio">
+        <div class="interface">
+          <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
+          <div class="flex">
+            <a href="https://lorenaop.github.io/pokedex/" target="_blank"><div class="img-portfolio" style="background-image: url(images/pokedex.png) ;"><div class="overlay">Pokedex</div>
+            </div></a>
+            <a href="https://lorenaop.github.io/nlw-setup/ " target="_blank"><div class="img-portfolio" style="background-image: url(images/habits.png) ;"><div class="overlay">Habits</div>
+            </div></a>
+            <a href="https://lorenaop.github.io/snapclima/" target="_blank"><div class="img-portfolio" style="background-image: url(images/snapclima.png) ;"><div class="overlay">Snapclima</div>
+            </div></a>
+          </div><!--flex-->
+        </div><!--interface-->
+      </section><!--portfolio-->
+
+      <section class="formulario">
+        <div class="interface">
+          <h2 class="titulo">FALA <span>COMIGO!</span></h2>
+
+          <form action="">
+            <input type="text" name="" id="" placeholder="Seu nome completo:" required>
+            <input type="text" name="" id="" placeholder="Seu e-mail:" required>
+            <input type="text" name="" id="" placeholder="Seu whatsapp:" >
+            <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+            <div class="btn-enviar"><input type="submit" value="ENVIAR"> </div>
+          </form>
+          </div><!--interface-->
+        </section><!--formulario-->
+    </main>
+    <footer>
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="logo-footer">
+              <img src="images/bye.png" alt="Logo Bye">
+            </div><!--logo-footer-->
+              <div class="btn-social">
+                <a href="https://www.instagram.com/oplorena/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                <a href="https://github.com/lorenaop" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                <a href="https://www.linkedin.com/in/lorena-oliveira-402ab2182/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+              </div><!--btn-social-->
+          
+          </div><!--flex-->
+        </div><!--line-footer-->
+
+        <div class="line-footer borda">
+          <p><i class="bi bi-envelope-fill"></i> <a href="mailto:lorena_oliveirapires@hotmail.com">lorena_oliveirapires@hotmail.com</a></p>
+        </div><!--line-footer-->
+      </div><!--interface-->
+    </footer><!--footer-->
+  </body>
+</html>
