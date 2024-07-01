@@ -15,7 +15,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="menu.js" defer></script>
-    <title>Welcome</title>
+    <title id="inicio">Welcome</title>
   </head>
   <body>
     <header>
@@ -29,15 +29,15 @@
 
         <nav class="menu-desktop">
           <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Competências</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Projetos</a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#comp">Competências</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#port">Projetos</a></li>
           </ul>
         </nav>
 
         <div class="btn-contato">
-          <a href="#">
+          <a href="#form">
             <button>Contato</button>
           </a>
         </div><!--btn-contato-->
@@ -53,11 +53,11 @@
 
           <nav >
             <ul>
-              <li><a href="#">Início</a></li>
-              <li><a href="#">Competências</a></li>
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Projetos</a></li>
-              <li><a href="#">Contato</a></li>
+              <li><a href="#inicio">Início</a></li>
+              <li><a href="#comp">Competências</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#port">Projetos</a></li>
+              <li><a href="#form">Contato</a></li>
             </ul>
           </nav>
 
@@ -87,7 +87,7 @@
               </p>
 
               <div class="btn-contato">
-                <a href="#">
+                <a href="#form">
                   <button>Entre em contato</button>
                 </a>
               </div>
@@ -103,7 +103,7 @@
         <!--interface-->
       </section>
       <!--topo-do-site-->
-      <section class="competencias">
+      <section id="comp" class="competencias">
         <div class="interface">
           <h2 class="titulo">MINHAS <span>COMPETÊNCIAS.</span></h2>
           <div class="flex">
@@ -125,14 +125,14 @@
         </div>
         <!--interface-->
       </section><!--competências-->
-      <section class="sobre">
+      <section id="sobre" class="sobre">
         <div class="interface">
           <div class="flex">
             <div class="img-sobre">
               <img src="images/sobre.png" alt="Sobre">
             </div><!--img-sobre-->
             <div class="txt-sobre">
-              <h2>UM POUCO, <span>SOBRE MIM!</span></h2>
+              <h2 >UM POUCO, <span>SOBRE MIM!</span></h2>
 
               <p>De forma intrínseca sempre fui muito comunicativa, proativa e de fácil adaptação, 
                 tenho motivação em aprender coisas novas e estou em constante atualização no mundo digital.</p>
@@ -150,7 +150,7 @@
         </div><!--interface-->
       </section><!--sobre-->
 
-      <section class="portfolio">
+      <section id="port" class="portfolio">
         <div class="interface">
           <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
           <div class="flex">
@@ -164,11 +164,13 @@
         </div><!--interface-->
       </section><!--portfolio-->
 
-      <section class="formulario">
+      <section id="form" class="formulario">
         <div class="interface">
           <h2 class="titulo">FALA <span>COMIGO!</span></h2>
 
           <form action="https://formsubmit.co/lorena_oliveirapires@hotmail.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/sucesso.html">
+            <input type="hidden" name="_captcha" value="false">
             <input type="text" name="" id="" placeholder="Seu nome completo:" required>
             <input type="text" name="" id="" placeholder="Seu e-mail:" required>
             <input type="text" name="" id="" placeholder="Seu whatsapp:" >
@@ -199,5 +201,8 @@
         </div><!--line-footer-->
       </div><!--interface-->
     </footer><!--footer-->
+   
+  
+
   </body>
 </html>
