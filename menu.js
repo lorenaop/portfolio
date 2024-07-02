@@ -11,21 +11,3 @@ menu.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   menu.classList.remove("abrir-menu");
 });
-
-const form = document.getElementById("formul");
-const campos = document.querySelectorAll(".required");
-const spans = document.querySelectorAll(".span-required");
-const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-
-function setError(index){
-  campos[index].style.border = '2px solid #e63636';
-  spans[index].stylr.display = 'block',
-}
-
-function nameValidade() {
-  if (campos[0].value.length < 3) {
-    console.log("NOME DEVE TER 3 CARACTERES");
-  } else {
-    console.log("VALIDADE O NOME");
-  }
-}
